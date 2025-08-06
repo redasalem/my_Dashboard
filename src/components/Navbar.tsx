@@ -2,7 +2,7 @@
 
 import { LogOut, Moon, Settings, Sun, User } from "lucide-react";
 import Link from "next/link";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Avatar} from "./ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,12 +13,11 @@ import {
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
-import { SidebarTrigger, useSidebar } from "./ui/sidebar";
+import { SidebarTrigger } from "./ui/sidebar";
 import Image from "next/image";
 
 const Navbar = () => {
-  const { theme, setTheme } = useTheme();
-  const { toggleSidebar } = useSidebar();
+  const {setTheme } = useTheme();
   return (
     <nav className="p-4 flex items-center justify-between sticky top-0 bg-background z-10">
       {/* LEFT */}
